@@ -1,6 +1,5 @@
-package net.fabricmc.example
+package com.cout970.logisticsfoundation
 
-// For support join https://discord.gg/v6v4pMv
 
 @Suppress("unused")
 fun init() {
@@ -10,4 +9,3 @@ fun init() {
 
     println("Hello Fabric world!")
 }
-
