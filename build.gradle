@@ -16,7 +16,9 @@ minecraft {
 
 
 repositories {
+    mavenLocal()
     maven { url = "http://maven.fabricmc.net/" }
+    maven { url = 'http://cout970.com/maven/minecraft' }
 }
 
 dependencies {
@@ -25,6 +27,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "net.fabricmc:fabric-language-kotlin:${project.fabric_kotlin_version}"
+    modImplementation "com.cout970:kotlin-dsl-library:${project.kotlin_dsl_library}"
 }
 
 processResources {
@@ -66,7 +69,8 @@ publishing {
     }
 
     repositories {
-         mavenLocal()
+        mavenLocal()
+        maven { url 'http://cout970.com/maven/minecraft' }
     }
 }
 
